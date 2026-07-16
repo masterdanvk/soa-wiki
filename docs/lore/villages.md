@@ -35,4 +35,4 @@ Recurring NPC groups content authors can use (these map to the quest system's NP
 | Zetsu (white shadows) | Mysterious plant-like scouts appearing in the wilds; nobody knows who they serve — yet |
 | Bandits | Common roadside threat; staple low-level quest target |
 | Samurai | Land-of-Iron style wanderers and caravan guards |
-| Village ninja (per village) | Guards and patrols of each hidden village |
+| Iwa | Generally hostile non player village who are not in active war, but was just in a great ninja war |
