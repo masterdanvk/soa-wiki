@@ -1,0 +1,71 @@
+site_name: SOA Wiki — Shinobi Online Adventure
+site_description: Lore, quests, and developer reference for Shinobi Online Adventure (GOA)
+site_url: https://masterdanvk.github.io/soa-wiki/
+repo_url: https://github.com/masterdanvk/soa-wiki
+repo_name: soa-wiki
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.copy
+  icon:
+    edit: material/pencil
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - World & Lore:
+      - Overview: lore/index.md
+      - Timeline: lore/timeline.md
+      - Villages & Factions: lore/villages.md
+      - Canon Policy: lore/canon-policy.md
+  - Quests:
+      - Quest Index: quests/index.md
+      - "Example: Whispers in the Leaves": quests/whispers-in-the-leaves.md
+  - NPCs:
+      - NPC Index: npcs/index.md
+  - Items:
+      - Item Index: items/index.md
+  - Developer Handbook:
+      - Overview & Coordination: dev/index.md
+      - Quest Template Reference: dev/quest-template-reference.md
+      - Objectives & Event Hooks: dev/objectives-and-events.md
+      - Dialogue & NPC Maker Workflow: dev/dialogue-and-npc-maker.md
+      - Quest Data Registry: dev/quest-data-registry.md
+      - Page Templates: dev/page-templates.md
+  - Contributing: contributing.md
