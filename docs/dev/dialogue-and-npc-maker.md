@@ -32,7 +32,7 @@ The NPC Maker is **deliberately ungated** — invited players author content. Re
 
 1. **Author** builds NPC + dialogue + quests (Quests tab) + encounters in the NPC Maker.
 2. **Export Package** (editor bottom bar) bundles the NPC entry, linked encounters, and every dialogue-referenced quest (including transitive `prereq_quest` chains) into one `goa_npc_package` JSON, delivered as a file download.
-3. Author attaches the package JSON to their GitHub Issue / PR for review.
+3. Author attaches the package JSON to the PVE Discord for review (both by peers and by the dev team).
 4. **Reviewer** uses **Import Package** (main-page toolbar) to load it into their own workshop: NPCs/encounters re-id on collision; quest ids already live in the registry are **kept** (live edits win) and reported.
 5. After approval, the reviewer's normal **Export Code** bakes compiled `.dm` (quests self-register at boot; JSON same-id entries still override, so live tuning stays possible).
 6. Author (or reviewer) writes the wiki pages: public quest page + [Quest Data Registry](quest-data-registry.md) entry.
